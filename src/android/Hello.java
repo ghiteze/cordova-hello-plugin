@@ -20,7 +20,7 @@ public class Hello extends CordovaPlugin {
 
     if (action.equals("open")) {
       String setting = args.getString(0);
-      Inten intent = null;
+      Intent intent = null;
 
       if (setting.equals("location")) {
         intent = new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
