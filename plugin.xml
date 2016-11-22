@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.example.plugins.hello" version="0.0.1">
+    <name>Hello</name>
+    <description>My first plugin</description>
+    
+    <asset src="www/hello.js" target="js/hello.js"/>
+
+    <js-module src="www/hello.js" name="hello">
+        <clobbers target="hello" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Hello">
+                <param name="ios-package" value="com.example.plugins.Hello"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/Hello.java" target-dir="src/com/example/plugins/"/>
+    </platform>
+</plugin>
