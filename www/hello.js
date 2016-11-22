@@ -1,8 +1,6 @@
-var cordova = require('cordova');
-
 module.exports = {
   hi: function (name, success, failure) {
-    cordova.exe(
+    cordova.exec(
       success,
       failure,
       "Hello",
