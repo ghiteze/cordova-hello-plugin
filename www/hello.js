@@ -1,5 +1,5 @@
 module.exports = {
-  hi: function (name, success, failure) {
-    cordova.exec(success, failure, "Hello", "hi", [name] );
+  open: function (name, success, failure) {
+    cordova.exec(success, failure, "Hello", "open", [name] );
   }
 };
