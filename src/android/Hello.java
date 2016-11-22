@@ -23,6 +23,9 @@ public class Hello extends CordovaPlugin {
 
       Intent intent = new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS);
       intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+      this.cordova.getActivity().startActivity(intent);
+      
       callbackContext.sendPluginResult(new PluginResult(status, ""));
 
       return true;
