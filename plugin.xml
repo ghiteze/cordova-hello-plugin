@@ -7,7 +7,7 @@
     <asset src="www/hello.js" target="js/hello.js"/>
 
     <js-module src="www/hello.js" name="hello">
-        <clobbers target="hello" />
+        <clobbers target="ahihi" />
     </js-module>
 
     <platform name="android">
