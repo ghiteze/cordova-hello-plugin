@@ -19,7 +19,7 @@ public class Hello extends CordovaPlugin {
     PluginResult.Status status = PluginResult.Status.OK;
 
     if (action.equals("open")) {
-      setting = args.getString(0);
+      String setting = args.getString(0);
       Inten intent = null;
 
       if (setting.equals("location")) {
