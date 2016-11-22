@@ -9,8 +9,8 @@ import org.json.JSONObject;
 
 
 public class Hello extends CordovaPlugin {
-  
-  @Override;
+
+  @Override
   public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 
     if (action.equals("hi")) {
